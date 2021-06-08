@@ -1,6 +1,8 @@
 package com.mrl.pastry.portal.model.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -11,9 +13,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <p>
- *
- * </p>
+ * User
  *
  * @author MrL
  * @since 2021-03-07
@@ -25,11 +25,11 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
+    private Long id;
 
     @ApiModelProperty(value = "wx openid")
-    private Integer openId;
+    private String openId;
 
     @ApiModelProperty(value = "username")
     private String username;
@@ -52,20 +52,26 @@ public class User implements Serializable {
     @ApiModelProperty(value = "avatar url")
     private String avatar;
 
-    @ApiModelProperty(value = "description")
-    private String description;
-
-    @ApiModelProperty(value = "blog count")
-    private Integer blogCount;
+    @ApiModelProperty(value = "profile")
+    private String profile;
 
     @ApiModelProperty(value = "coin_count")
     private Integer coinCount;
 
+    @ApiModelProperty(value = "blog_count")
+    private Integer blogCount;
+
+    @ApiModelProperty(value = "follow_count")
+    private Integer followCount;
+
+    @ApiModelProperty(value = "fans_count")
+    private Integer fansCount;
+
+    @TableField(fill = FieldFill.INSERT)
     @ApiModelProperty(value = "create time")
     private Date createTime;
 
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     @ApiModelProperty(value = "update time")
     private Date updateTime;
-
-
 }

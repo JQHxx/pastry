@@ -13,9 +13,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <p>
- *
- * </p>
+ * Category
  *
  * @author MrL
  * @since 2021-03-07
@@ -27,8 +25,8 @@ public class Category implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
+    private Long id;
 
     @ApiModelProperty(value = "category name")
     private String name;
@@ -39,7 +37,7 @@ public class Category implements Serializable {
     @ApiModelProperty(value = "cover thumbnail")
     private String thumbnail;
 
-    @ApiModelProperty(value = "parent category")
+    @ApiModelProperty(value = "parent category id")
     private Integer parentId;
 
     @ApiModelProperty(value = "create_time")
@@ -49,6 +47,4 @@ public class Category implements Serializable {
     @ApiModelProperty(value = "update_time")
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateDate;
-
-
 }
