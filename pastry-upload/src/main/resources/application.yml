@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    include: #记一个奇怪的Bug: application-prod.yml配置文件显示在application.yml之前导致加载失败，删除重建后ok
+      - upload
+      - dev

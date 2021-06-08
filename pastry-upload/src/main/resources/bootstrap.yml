@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: pastry-upload #在Bootstrap中配置logName,解决log.name_IS_UNDEFINED问题
+  cloud:
+    nacos:
+      username: nacos
+      password: 123456
+      discovery:
+        server-addr: nacos:8848

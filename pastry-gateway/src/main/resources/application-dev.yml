@@ -1,0 +1,69 @@
+server:
+  port: 9000
+
+springfox:
+  documentation:
+    enabled: true
+
+gateway:
+  ignore:
+    urls:
+      - /api/pastry/portal/user/authenticate
+
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: sentinel:8080
+      filter:
+        enabled: false
+      scg:
+        fallback:
+          mode: response
+          response-status: 429
+          response-body: "系统繁忙,请稍后重试"
+      datasource:
+        gw-flow:
+          nacos:
+            serverAddr: nacos:8848
+            dataId: gateway
+            groupId: pastry
+            dataType: json
+            ruleType: gw-flow
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+          lower-case-service-id: true
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        - id: portal
+          uri: lb://pastry-portal
+          predicates:
+            - Path=/api/pastry/portal/**
+          filters:
+            - StripPrefix=3
+        - id: upload
+          uri: lb://pastry-upload
+          predicates:
+            - Path=/api/pastry/upload/**
+          filters:
+            - StripPrefix=3
+        - id: pay
+          uri: lb://pastry-pay
+          predicates:
+            - Path=/api/pastry/pay/**
+          filters:
+            - StripPrefix=3

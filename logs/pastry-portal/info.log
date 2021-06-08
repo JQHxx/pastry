@@ -1,0 +1,690 @@
+2021-06-08 00:03:43.910 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 00:03:51.474 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 00:03:51.478 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-06-08 00:03:52.352 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 856ms. Found 2 Elasticsearch repository interfaces.
+2021-06-08 00:03:52.359 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 00:03:52.360 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-06-08 00:03:52.399 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-06-08 00:03:52.430 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 00:03:52.436 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 00:03:52.498 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.BlogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 00:03:52.499 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 00:03:52.499 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 0 Redis repository interfaces.
+2021-06-08 00:03:53.309 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=eb87396f-3afa-3551-8ef3-fc57162ce21a
+2021-06-08 00:03:53.403 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 00:03:53.451 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$b0ae8a5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 00:03:54.904 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$8c4b7721] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 00:03:55.315 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7708b66a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 00:03:55.377 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 00:03:57.430 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 00:03:57.432 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13437 ms
+2021-06-08 00:04:01.420 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 00:04:03.956 [redisson-netty-2-21] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 00:04:04.015 [redisson-netty-2-18] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 00:04:10.315 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 00:04:10.746 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 00:04:19.083 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2021-06-08 00:04:19.083 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-06-08 00:04:19.084 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2021-06-08 00:04:22.429 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 00:04:22.433 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 00:04:26.146 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 00:04:26.356 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 00:04:26.478 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 00:04:26.494 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 00:04:29.282 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 00:04:29.282 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 00:04:29.282 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 00:04:29.283 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 00:04:29.283 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 00:04:29.283 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 00:04:29.283 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 00:04:29.283 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 00:04:29.283 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 00:04:29.283 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 00:04:29.284 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 00:04:29.284 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/portal/user/authenticate', POST], []
+2021-06-08 00:04:29.368 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@552b7481, org.springframework.security.web.context.SecurityContextPersistenceFilter@49231d79, org.springframework.security.web.header.HeaderWriterFilter@73a5cc47, org.springframework.security.web.authentication.logout.LogoutFilter@7c74ef4a, com.mrl.pastry.common.filter.JwtAuthFilter@696105c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3359217d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50b010d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@475b796d, org.springframework.security.web.session.SessionManagementFilter@106f0051, org.springframework.security.web.access.ExceptionTranslationFilter@7ecca48, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63661fc7]
+2021-06-08 00:04:32.918 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 00:04:33.093 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 00:04:33.253 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 00:04:33.820 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 00:04:34.297 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 00:04:34.904 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 00:04:37.094 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 00:04:37.546 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3e729d46:0/SimpleConnection@466d6ea5 [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 56812]
+2021-06-08 00:04:38.307 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 59.119 seconds (JVM running for 62.051)
+2021-06-08 00:10:02.507 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-08 00:10:02.507 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-08 00:10:02.597 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 88 ms
+2021-06-08 07:31:21.702 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 07:31:28.177 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 07:31:28.183 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-06-08 07:31:29.786 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1569ms. Found 2 Elasticsearch repository interfaces.
+2021-06-08 07:31:29.806 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 07:31:29.809 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-06-08 07:31:29.880 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-06-08 07:31:29.930 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 07:31:29.934 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 07:31:30.049 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.BlogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 07:31:30.050 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 07:31:30.050 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80ms. Found 0 Redis repository interfaces.
+2021-06-08 07:31:31.056 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=eb87396f-3afa-3551-8ef3-fc57162ce21a
+2021-06-08 07:31:31.144 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:31:31.185 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$b0300ffe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:31:32.151 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$8bccfcc3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:31:32.877 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@35d114f4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:31:32.943 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:31:34.987 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 07:31:34.988 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13182 ms
+2021-06-08 07:31:39.312 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 07:31:41.585 [redisson-netty-2-24] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 07:31:41.641 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 07:31:48.186 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 07:31:48.942 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 07:31:57.707 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2021-06-08 07:31:57.707 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-06-08 07:31:57.707 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2021-06-08 07:32:01.146 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 07:32:01.149 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 07:32:06.207 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 07:32:06.478 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 07:32:06.670 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 07:32:06.695 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 07:32:08.439 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 07:32:08.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 07:32:08.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 07:32:08.441 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 07:32:08.441 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 07:32:08.442 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 07:32:08.442 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 07:32:08.442 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 07:32:08.443 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 07:32:08.443 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 07:32:08.443 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 07:32:08.444 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/portal/user/authenticate', POST], []
+2021-06-08 07:32:08.582 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40e28324, org.springframework.security.web.context.SecurityContextPersistenceFilter@268bb09d, org.springframework.security.web.header.HeaderWriterFilter@257ba195, org.springframework.security.web.authentication.logout.LogoutFilter@1e6a74fe, com.mrl.pastry.common.filter.JwtAuthFilter@764d54a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36dd68f1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2954be42, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@286e2b71, org.springframework.security.web.session.SessionManagementFilter@7a696a6b, org.springframework.security.web.access.ExceptionTranslationFilter@27e713d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7db644d5]
+2021-06-08 07:32:11.671 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 07:32:11.721 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 07:32:11.768 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 07:32:12.221 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 07:32:12.387 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 07:32:12.523 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 07:32:16.007 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 07:32:16.701 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5c934077:0/SimpleConnection@5df785d1 [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 64788]
+2021-06-08 07:32:17.297 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 62.388 seconds (JVM running for 66.111)
+2021-06-08 07:34:29.357 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-08 07:34:29.357 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-08 07:34:29.378 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+2021-06-08 07:39:10.800 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-06-08 07:39:10.809 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-06-08 07:39:10.824 [SpringContextShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.1.3.Final
+2021-06-08 07:39:10.865 [SpringContextShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 07:39:10.868 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 07:40:10.932 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-06-08 07:40:10.957 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-06-08 07:40:11.041 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 07:41:11.044 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 07:42:11.372 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'executor'
+2021-06-08 07:42:11.378 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2021-06-08 07:42:11.386 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-08 07:42:11.483 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-08 07:42:33.622 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 07:42:40.375 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 07:42:40.380 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-06-08 07:42:41.668 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1261ms. Found 2 Elasticsearch repository interfaces.
+2021-06-08 07:42:41.677 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 07:42:41.678 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-06-08 07:42:41.725 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-06-08 07:42:41.752 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 07:42:41.755 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 07:42:41.830 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.BlogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 07:42:41.831 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 07:42:41.831 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 0 Redis repository interfaces.
+2021-06-08 07:42:43.608 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=eb87396f-3afa-3551-8ef3-fc57162ce21a
+2021-06-08 07:42:44.029 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:42:44.205 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$297de3a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:42:45.448 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$51ad066] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:42:46.090 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@71468613' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:42:46.178 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:42:50.801 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 07:42:50.805 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 17109 ms
+2021-06-08 07:42:57.464 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 07:43:00.377 [redisson-netty-2-17] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 07:43:00.622 [redisson-netty-2-14] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 07:43:08.924 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 07:43:09.708 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 07:43:16.561 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2021-06-08 07:43:16.562 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-06-08 07:43:16.562 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2021-06-08 07:43:19.627 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 07:43:19.629 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 07:43:23.725 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 07:43:24.116 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 07:43:24.339 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 07:43:24.409 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 07:43:26.952 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 07:43:26.953 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 07:43:26.953 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 07:43:26.954 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 07:43:26.954 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 07:43:26.954 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 07:43:26.954 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 07:43:26.954 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 07:43:26.955 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 07:43:26.955 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 07:43:26.955 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 07:43:27.264 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62765e11, org.springframework.security.web.context.SecurityContextPersistenceFilter@711cd6f9, org.springframework.security.web.header.HeaderWriterFilter@259fb8f5, org.springframework.security.web.authentication.logout.LogoutFilter@74ae2dec, com.mrl.pastry.common.filter.JwtAuthFilter@4a5c6b30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2769d577, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30628ef9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d73f2a1, org.springframework.security.web.session.SessionManagementFilter@43b45e77, org.springframework.security.web.access.ExceptionTranslationFilter@b0ff869, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18cdacd]
+2021-06-08 07:43:31.192 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 07:43:31.225 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 07:43:31.275 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 07:43:31.542 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 07:43:31.714 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 07:43:31.877 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 07:43:34.348 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 07:43:34.870 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#35738a92:0/SimpleConnection@79442196 [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 49704]
+2021-06-08 07:43:35.553 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 68.471 seconds (JVM running for 71.305)
+2021-06-08 07:46:52.283 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-08 07:46:52.283 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-08 07:46:52.307 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2021-06-08 07:51:08.754 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-06-08 07:51:09.181 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-06-08 07:51:09.191 [SpringContextShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.1.3.Final
+2021-06-08 07:51:09.208 [SpringContextShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 07:51:09.214 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 07:52:09.261 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-06-08 07:52:09.284 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-06-08 07:52:09.292 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 07:53:09.295 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 07:54:09.410 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'executor'
+2021-06-08 07:54:09.413 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2021-06-08 07:54:09.419 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-08 07:54:09.537 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-08 07:54:27.971 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 07:54:36.229 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 07:54:36.243 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-06-08 07:54:38.717 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2408ms. Found 2 Elasticsearch repository interfaces.
+2021-06-08 07:54:38.743 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 07:54:38.748 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-06-08 07:54:38.884 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-06-08 07:54:38.964 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 07:54:38.971 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 07:54:39.186 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.BlogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 07:54:39.188 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 07:54:39.189 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 172ms. Found 0 Redis repository interfaces.
+2021-06-08 07:54:41.475 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=eb87396f-3afa-3551-8ef3-fc57162ce21a
+2021-06-08 07:54:42.008 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:54:42.217 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$4b7ce2d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:54:43.320 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$2719cf98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:54:43.925 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@d512c1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:54:44.029 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 07:54:46.218 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 07:54:46.219 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 18081 ms
+2021-06-08 07:54:51.968 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 07:54:53.993 [redisson-netty-2-24] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 07:54:54.464 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 07:54:59.779 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 07:55:00.426 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 07:55:08.312 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2021-06-08 07:55:08.313 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-06-08 07:55:08.313 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2021-06-08 07:55:11.383 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 07:55:11.418 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 07:55:17.325 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 07:55:17.630 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 07:55:17.802 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 07:55:17.819 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 07:55:19.482 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 07:55:19.482 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 07:55:19.483 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 07:55:19.483 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 07:55:19.484 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 07:55:19.484 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 07:55:19.485 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 07:55:19.485 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 07:55:19.485 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 07:55:19.486 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 07:55:19.486 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 07:55:19.626 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@efbc6a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@46bc9802, org.springframework.security.web.header.HeaderWriterFilter@87f8146, org.springframework.security.web.authentication.logout.LogoutFilter@4dbf902, com.mrl.pastry.common.filter.JwtAuthFilter@75c45c4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31bbcced, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c2cc406, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19544898, org.springframework.security.web.session.SessionManagementFilter@2f24e1f3, org.springframework.security.web.access.ExceptionTranslationFilter@647dcc5e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28322fd3]
+2021-06-08 07:55:22.379 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 07:55:22.410 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 07:55:22.450 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 07:55:22.642 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 07:55:22.794 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 07:55:22.974 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 07:55:25.583 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 07:55:26.343 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4e502162:0/SimpleConnection@6626ae40 [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 51178]
+2021-06-08 07:55:27.435 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 66.92 seconds (JVM running for 70.201)
+2021-06-08 07:56:06.768 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-08 07:56:06.768 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-08 07:56:06.790 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+2021-06-08 08:12:12.137 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-06-08 08:12:12.192 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-06-08 08:12:12.198 [SpringContextShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.1.3.Final
+2021-06-08 08:12:12.204 [SpringContextShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 08:12:12.205 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 08:27:12.867 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 08:27:23.413 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 08:27:23.428 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-06-08 08:27:27.293 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3784ms. Found 2 Elasticsearch repository interfaces.
+2021-06-08 08:27:27.322 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 08:27:27.327 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-06-08 08:27:27.537 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 207ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-06-08 08:27:27.658 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 08:27:27.665 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 08:27:27.910 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.BlogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 08:27:27.913 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 08:27:27.914 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 172ms. Found 0 Redis repository interfaces.
+2021-06-08 08:27:29.638 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=eb87396f-3afa-3551-8ef3-fc57162ce21a
+2021-06-08 08:27:29.716 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 08:27:29.763 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$33bf0012] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 08:27:30.687 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$f5becd7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 08:27:30.944 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7544260a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 08:27:30.975 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 08:27:33.616 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 08:27:33.617 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 20606 ms
+2021-06-08 08:27:37.693 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 08:27:40.417 [redisson-netty-2-23] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 08:27:40.509 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 08:27:46.652 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 08:27:47.250 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 08:27:53.412 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2021-06-08 08:27:53.412 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-06-08 08:27:53.412 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2021-06-08 08:27:56.914 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 08:27:56.917 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 08:28:02.676 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 08:28:03.261 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 08:28:03.400 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 08:28:03.429 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 08:28:05.997 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 08:28:05.998 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 08:28:05.998 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 08:28:05.999 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 08:28:05.999 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 08:28:06.000 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 08:28:06.001 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 08:28:06.001 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 08:28:06.001 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 08:28:06.002 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 08:28:06.002 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 08:28:06.254 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b94df68, org.springframework.security.web.context.SecurityContextPersistenceFilter@27ae8ce3, org.springframework.security.web.header.HeaderWriterFilter@27e713d4, org.springframework.security.web.authentication.logout.LogoutFilter@f25176a, com.mrl.pastry.common.filter.JwtAuthFilter@64ff0eaa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7511e348, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c34c819, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ef2816a, org.springframework.security.web.session.SessionManagementFilter@f1a5005, org.springframework.security.web.access.ExceptionTranslationFilter@5166f042, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fc8930f]
+2021-06-08 08:28:10.935 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 08:28:10.995 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 08:28:11.055 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 08:28:11.304 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 08:28:11.433 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 08:28:11.567 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 08:28:15.477 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 08:28:16.251 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3b0b20a8:0/SimpleConnection@3a0773 [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 56059]
+2021-06-08 08:28:17.110 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 73.77 seconds (JVM running for 81.64)
+2021-06-08 08:28:58.941 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-08 08:28:58.942 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-08 08:28:58.995 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 53 ms
+2021-06-08 09:44:09.408 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-06-08 09:44:09.430 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-06-08 09:44:09.435 [SpringContextShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.1.3.Final
+2021-06-08 09:44:09.442 [SpringContextShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 09:44:09.452 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 10:07:41.820 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 10:07:47.795 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 10:07:47.800 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-06-08 10:07:50.261 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2436ms. Found 2 Elasticsearch repository interfaces.
+2021-06-08 10:07:50.346 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 10:07:50.351 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-06-08 10:07:50.450 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-06-08 10:07:50.480 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 10:07:50.484 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 10:07:50.568 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.BlogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 10:07:50.569 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 10:07:50.570 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54ms. Found 0 Redis repository interfaces.
+2021-06-08 10:07:51.384 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=eb87396f-3afa-3551-8ef3-fc57162ce21a
+2021-06-08 10:07:51.722 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:07:51.911 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$bad9fbb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:07:53.743 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$9676e876] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:07:53.965 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@fd14789' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:07:53.988 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:07:56.629 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 10:07:56.630 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 14731 ms
+2021-06-08 10:08:00.154 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 10:08:02.397 [redisson-netty-2-23] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 10:08:02.698 [redisson-netty-2-18] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 10:08:07.718 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 10:08:08.095 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 10:08:15.349 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2021-06-08 10:08:15.350 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-06-08 10:08:15.352 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2021-06-08 10:08:18.549 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 10:08:18.552 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 10:08:23.158 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 10:08:23.456 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 10:08:23.570 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 10:08:23.595 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 10:08:25.411 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 10:08:25.411 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 10:08:25.412 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 10:08:25.412 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 10:08:25.413 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 10:08:25.413 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 10:08:25.413 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 10:08:25.414 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 10:08:25.414 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 10:08:25.414 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 10:08:25.414 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 10:08:25.546 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bfe9344, org.springframework.security.web.context.SecurityContextPersistenceFilter@a9339e5, org.springframework.security.web.header.HeaderWriterFilter@33bd3549, org.springframework.security.web.authentication.logout.LogoutFilter@8508dae, com.mrl.pastry.common.filter.JwtAuthFilter@48cc060d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ce87db5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12f52ca4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3de473d9, org.springframework.security.web.session.SessionManagementFilter@1fba15d7, org.springframework.security.web.access.ExceptionTranslationFilter@7ff48cdc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47d0127f]
+2021-06-08 10:08:28.364 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 10:08:28.410 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 10:08:28.476 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 10:08:28.781 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 10:08:28.953 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 10:08:29.156 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 10:08:34.020 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 10:08:34.393 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#18f6ee8d:0/SimpleConnection@70eb0c59 [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 53844]
+2021-06-08 10:08:34.958 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 60.431 seconds (JVM running for 64.564)
+2021-06-08 10:10:20.171 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-08 10:10:20.172 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-08 10:10:20.195 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2021-06-08 10:10:39.434 [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 10:10:39.658 [XNIO-1 task-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: pastry-upload instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pastry-upload,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2021-06-08 10:10:39.682 [XNIO-1 task-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2021-06-08 10:10:39.880 [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 10:10:39.890 [XNIO-1 task-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client pastry-upload initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pastry-upload,current list of Servers=[192.168.43.215:2862],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.43.215:2862;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@796912bf
+2021-06-08 10:10:40.694 [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 10:23:29.751 [Thread-14] INFO  com.netflix.loadbalancer.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+2021-06-08 10:23:29.815 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-06-08 10:23:30.760 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-06-08 10:23:30.772 [SpringContextShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.1.3.Final
+2021-06-08 10:23:30.804 [SpringContextShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 10:23:30.807 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 10:24:30.881 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-06-08 10:24:30.888 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-06-08 10:24:30.893 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 10:25:30.896 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 10:26:28.045 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 10:26:33.973 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 10:26:33.990 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-06-08 10:26:35.458 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1390ms. Found 2 Elasticsearch repository interfaces.
+2021-06-08 10:26:35.469 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 10:26:35.470 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-06-08 10:26:35.516 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-06-08 10:26:35.541 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 10:26:35.544 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 10:26:35.627 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.BlogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 10:26:35.636 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 10:26:35.636 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68ms. Found 0 Redis repository interfaces.
+2021-06-08 10:26:37.970 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=eb87396f-3afa-3551-8ef3-fc57162ce21a
+2021-06-08 10:26:38.062 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:26:38.105 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$5ee57926] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:26:39.170 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$3a8265eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:26:39.898 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2b8cf049' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:26:39.952 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:26:41.993 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 10:26:41.994 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13731 ms
+2021-06-08 10:26:44.496 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 10:26:46.433 [redisson-netty-2-16] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 10:26:46.587 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 10:26:52.127 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 10:26:52.487 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 10:27:00.609 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2021-06-08 10:27:00.611 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-06-08 10:27:00.612 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2021-06-08 10:27:04.150 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 10:27:04.155 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 10:27:07.784 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 10:27:08.112 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 10:27:08.194 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 10:27:08.216 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 10:27:09.872 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 10:27:09.872 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 10:27:09.873 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 10:27:09.873 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 10:27:09.873 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 10:27:09.874 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 10:27:09.874 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 10:27:09.874 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 10:27:09.874 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 10:27:09.874 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 10:27:09.874 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 10:27:09.988 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@247246ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d957b5a, org.springframework.security.web.header.HeaderWriterFilter@583f6270, org.springframework.security.web.authentication.logout.LogoutFilter@68032a80, com.mrl.pastry.common.filter.JwtAuthFilter@3b8ce72, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24bf95ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b917b5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43b45e77, org.springframework.security.web.session.SessionManagementFilter@5ae68d0e, org.springframework.security.web.access.ExceptionTranslationFilter@2a654f27, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@291fbdc9]
+2021-06-08 10:27:14.880 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 10:27:14.981 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 10:27:15.112 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 10:27:15.366 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 10:27:15.453 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 10:27:15.561 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 10:27:19.276 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 10:27:20.156 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#f511a8e:0/SimpleConnection@70b38e0 [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 56687]
+2021-06-08 10:27:21.265 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 63.262 seconds (JVM running for 67.255)
+2021-06-08 10:28:39.800 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-08 10:28:39.800 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-08 10:28:39.837 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 36 ms
+2021-06-08 10:29:33.436 [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 10:29:33.705 [XNIO-1 task-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: pastry-upload instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pastry-upload,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2021-06-08 10:29:33.754 [XNIO-1 task-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2021-06-08 10:29:34.854 [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 10:29:34.947 [XNIO-1 task-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client pastry-upload initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pastry-upload,current list of Servers=[192.168.43.215:2862],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.43.215:2862;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@1b001af8
+2021-06-08 10:35:22.154 [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 10:35:22.446 [Thread-14] INFO  com.netflix.loadbalancer.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+2021-06-08 10:35:22.457 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-06-08 10:35:22.473 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-06-08 10:35:22.491 [SpringContextShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.1.3.Final
+2021-06-08 10:35:22.548 [SpringContextShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 10:35:22.552 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 10:36:22.574 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-06-08 10:36:22.579 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-06-08 10:36:22.584 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 10:37:22.604 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 10:38:22.639 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'executor'
+2021-06-08 10:38:22.658 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2021-06-08 10:38:22.661 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-08 10:38:22.706 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-08 10:38:40.025 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 10:38:48.792 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 10:38:48.799 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-06-08 10:38:50.163 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1328ms. Found 2 Elasticsearch repository interfaces.
+2021-06-08 10:38:50.177 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 10:38:50.178 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-06-08 10:38:50.244 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-06-08 10:38:50.277 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 10:38:50.281 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 10:38:50.382 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.BlogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 10:38:50.384 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 10:38:50.394 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77ms. Found 0 Redis repository interfaces.
+2021-06-08 10:38:51.655 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=eb87396f-3afa-3551-8ef3-fc57162ce21a
+2021-06-08 10:38:51.773 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:38:51.838 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$4eda6154] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:38:53.063 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$2a774e19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:38:53.411 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@42238078' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:38:53.437 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 10:38:55.546 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 10:38:55.549 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 15081 ms
+2021-06-08 10:39:02.454 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 10:39:06.055 [redisson-netty-2-17] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 10:39:06.151 [redisson-netty-2-12] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 10:39:12.162 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 10:39:12.727 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 10:39:18.700 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2021-06-08 10:39:18.703 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-06-08 10:39:18.705 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2021-06-08 10:39:23.170 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 10:39:23.173 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 10:39:28.938 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 10:39:29.967 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 10:39:30.414 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 10:39:30.490 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 10:39:33.662 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 10:39:33.663 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 10:39:33.664 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 10:39:33.664 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 10:39:33.664 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 10:39:33.665 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 10:39:33.665 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 10:39:33.665 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 10:39:33.665 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 10:39:33.666 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 10:39:33.666 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 10:39:33.823 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38691f8d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a288163, org.springframework.security.web.header.HeaderWriterFilter@454056b, org.springframework.security.web.authentication.logout.LogoutFilter@ceb4f91, com.mrl.pastry.common.filter.JwtAuthFilter@1cf7c055, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1344ee24, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c40ae2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@463a0302, org.springframework.security.web.session.SessionManagementFilter@39dfadd7, org.springframework.security.web.access.ExceptionTranslationFilter@743b4921, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cb83205]
+2021-06-08 10:39:37.207 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 10:39:37.250 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 10:39:37.295 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 10:39:37.469 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 10:39:37.604 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 10:39:37.852 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 10:39:42.831 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 10:39:43.387 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#18e0f894:0/SimpleConnection@102fcc80 [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 58666]
+2021-06-08 10:39:44.316 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 71.002 seconds (JVM running for 74.402)
+2021-06-08 10:40:51.280 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-08 10:40:51.280 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-08 10:40:51.308 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+2021-06-08 10:42:11.163 [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 10:42:11.245 [XNIO-1 task-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: pastry-upload instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pastry-upload,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2021-06-08 10:42:11.260 [XNIO-1 task-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2021-06-08 10:42:11.363 [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 10:42:11.369 [XNIO-1 task-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client pastry-upload initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pastry-upload,current list of Servers=[192.168.43.215:2862],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.43.215:2862;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@42d91d65
+2021-06-08 10:42:12.269 [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 11:09:46.090 [Thread-14] INFO  com.netflix.loadbalancer.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+2021-06-08 11:09:46.145 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-06-08 11:09:46.823 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-06-08 11:09:46.831 [SpringContextShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.1.3.Final
+2021-06-08 11:09:46.851 [SpringContextShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 11:09:46.855 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 11:10:46.899 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-06-08 11:10:46.904 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-06-08 11:10:46.907 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 11:11:46.910 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 11:12:47.009 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'executor'
+2021-06-08 11:12:47.024 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2021-06-08 11:12:47.027 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-08 11:12:47.036 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-08 11:13:14.510 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 11:13:18.998 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 11:13:19.005 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-06-08 11:13:20.132 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1100ms. Found 2 Elasticsearch repository interfaces.
+2021-06-08 11:13:20.146 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 11:13:20.148 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-06-08 11:13:20.229 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-06-08 11:13:20.275 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 11:13:20.279 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 11:13:20.370 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.BlogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 11:13:20.372 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mrl.pastry.portal.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-06-08 11:13:20.372 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67ms. Found 0 Redis repository interfaces.
+2021-06-08 11:13:21.402 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=eb87396f-3afa-3551-8ef3-fc57162ce21a
+2021-06-08 11:13:21.489 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 11:13:21.536 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$7fc033c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 11:13:23.288 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$5b5d2086] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 11:13:23.942 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5a2f401a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 11:13:24.017 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 11:13:25.253 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 11:13:25.256 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10664 ms
+2021-06-08 11:13:29.675 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 11:13:33.196 [redisson-netty-2-17] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 11:13:33.288 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 11:13:38.112 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 11:13:38.681 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 11:13:46.557 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.2.RELEASE
+2021-06-08 11:13:46.559 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-06-08 11:13:46.560 [main] INFO  o.s.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.6.2
+2021-06-08 11:13:50.170 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 11:13:50.174 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 11:13:54.788 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 11:13:55.189 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 11:13:55.290 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 11:13:55.316 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 11:13:57.035 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 11:13:57.036 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 11:13:57.037 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 11:13:57.037 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 11:13:57.037 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 11:13:57.038 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 11:13:57.038 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 11:13:57.038 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 11:13:57.038 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 11:13:57.039 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 11:13:57.039 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 11:13:57.242 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fba15d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c7b040f, org.springframework.security.web.header.HeaderWriterFilter@3c79071e, org.springframework.security.web.authentication.logout.LogoutFilter@2a2d0cff, com.mrl.pastry.common.filter.JwtAuthFilter@7c7a4986, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@337f6716, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@546ab02b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c8dc1ef, org.springframework.security.web.session.SessionManagementFilter@397ff526, org.springframework.security.web.access.ExceptionTranslationFilter@2b5854a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@532860c7]
+2021-06-08 11:14:00.100 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 11:14:00.139 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 11:14:00.185 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 11:14:00.403 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 11:14:00.606 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 11:14:00.778 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 11:14:04.727 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 11:14:05.098 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#40e420fe:0/SimpleConnection@31f5829e [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 62232]
+2021-06-08 11:14:05.886 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 61.078 seconds (JVM running for 64.93)
+2021-06-08 11:14:45.463 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-08 11:14:45.464 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-08 11:14:45.495 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 31 ms
+2021-06-08 11:18:12.359 [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 11:18:12.456 [XNIO-1 task-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: pastry-upload instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pastry-upload,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2021-06-08 11:18:12.470 [XNIO-1 task-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2021-06-08 11:18:12.579 [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 11:18:12.586 [XNIO-1 task-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client pastry-upload initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pastry-upload,current list of Servers=[192.168.43.215:2862],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.43.215:2862;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@3bb14af3
+2021-06-08 11:18:13.481 [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: pastry-upload.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2021-06-08 11:43:05.514 [Thread-14] INFO  com.netflix.loadbalancer.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+2021-06-08 11:43:05.594 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-06-08 11:43:06.108 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-06-08 11:43:06.115 [SpringContextShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.1.3.Final
+2021-06-08 11:43:06.138 [SpringContextShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 11:43:06.141 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 11:44:06.199 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-06-08 11:44:06.205 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-06-08 11:44:06.210 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 20:44:01.082 [main] INFO  com.mrl.pastry.portal.PortalApplication - The following profiles are active: security,dev
+2021-06-08 20:44:07.582 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 20:44:07.591 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-08 20:44:07.761 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101ms. Found 0 Redis repository interfaces.
+2021-06-08 20:44:09.279 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=66c35b36-31d0-3f12-ba4a-ed6888bd56fd
+2021-06-08 20:44:09.440 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.portal.feign.FeignUploadService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 20:44:09.491 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncTaskConfiguration' of type [com.mrl.pastry.portal.config.AsyncTaskConfiguration$$EnhancerBySpringCGLIB$$2cfbc050] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 20:44:11.756 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mrl.pastry.common.config.RedisConfiguration' of type [com.mrl.pastry.common.config.RedisConfiguration$$EnhancerBySpringCGLIB$$898ad15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 20:44:12.136 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@65ef9a0a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 20:44:12.168 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 20:44:14.341 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-06-08 20:44:14.343 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13187 ms
+2021-06-08 20:44:18.156 [main] INFO  org.redisson.Version - Redisson 3.13.6
+2021-06-08 20:44:21.093 [redisson-netty-2-20] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for redis/127.0.0.1:6379
+2021-06-08 20:44:21.186 [redisson-netty-2-18] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for redis/127.0.0.1:6379
+2021-06-08 20:44:27.958 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-08 20:44:28.489 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-08 20:44:31.367 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2021-06-08 20:44:31.370 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'executor'
+2021-06-08 20:44:35.428 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-08 20:44:35.728 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-08 20:44:35.822 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 20:44:35.846 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-08 20:44:39.341 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html', GET], []
+2021-06-08 20:44:39.342 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/doc.html', GET], []
+2021-06-08 20:44:39.342 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**', GET], []
+2021-06-08 20:44:39.342 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger/**', GET], []
+2021-06-08 20:44:39.343 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-06-08 20:44:39.343 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-06-08 20:44:39.343 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-06-08 20:44:39.343 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ico', GET], []
+2021-06-08 20:44:39.344 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs/**', GET], []
+2021-06-08 20:44:39.344 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/springfox-swagger-ui/**', GET], []
+2021-06-08 20:44:39.344 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/druid/**', GET], []
+2021-06-08 20:44:39.448 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37c1e2a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@68c06a2, org.springframework.security.web.header.HeaderWriterFilter@6af447b6, org.springframework.security.web.authentication.logout.LogoutFilter@4afdcdf6, com.mrl.pastry.common.filter.JwtAuthFilter@48f95f96, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10374cae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@641bd93e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14fed48e, org.springframework.security.web.session.SessionManagementFilter@575a6540, org.springframework.security.web.access.ExceptionTranslationFilter@5c902a83, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e7d6175]
+2021-06-08 20:44:43.008 [main] INFO  io.undertow - starting server: Undertow - 2.1.3.Final
+2021-06-08 20:44:43.040 [main] INFO  org.xnio - XNIO version 3.8.0.Final
+2021-06-08 20:44:43.085 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.0.Final
+2021-06-08 20:44:43.584 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2021-06-08 20:44:44.049 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port(s) 8088 (http)
+2021-06-08 20:44:44.722 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP pastry-portal 192.168.43.215:8088 register finished
+2021-06-08 20:44:48.021 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [rabbit:5672]
+2021-06-08 20:44:48.482 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#dd26290:0/SimpleConnection@7cb7ca06 [delegate=amqp://mrl@47.115.138.120:5672//pastry, localPort= 50366]
+2021-06-08 20:44:49.086 [main] INFO  com.mrl.pastry.portal.PortalApplication - Started PortalApplication in 55.398 seconds (JVM running for 58.064)
+2021-06-08 20:56:10.224 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-06-08 20:56:10.493 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-06-08 20:56:10.502 [SpringContextShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.1.3.Final
+2021-06-08 20:56:10.528 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-08 20:57:10.582 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-06-08 20:57:10.590 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-06-08 20:57:10.594 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'

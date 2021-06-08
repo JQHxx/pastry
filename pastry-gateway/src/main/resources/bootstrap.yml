@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: pastry-gateway
+  cloud:
+    nacos:
+      username: nacos
+      password: 123456
+      discovery:
+        server-addr: nacos:8848

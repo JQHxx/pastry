@@ -1,0 +1,50 @@
+server:
+  port: 8470
+
+springfox:
+  documentation:
+    enabled: true
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username:
+    password:
+    url: jdbc:mysql://mysql:3306/pastry-pay?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+  redis:
+    host: redis
+    database: 0
+    port: 6379
+    timeout: 10000
+    lettuce:
+      pool:
+        max-active: 1024
+        max-wait: 10000
+        max-idle: 200
+        min-idle: 8
+    redisson:
+      file: classpath:redisson.yml
+  rabbitmq:
+    host: rabbit
+    port: 5672
+    virtual-host: /pastry
+    username:
+    password:
+    listener:
+      simple:
+        retry:
+          enabled: true
+        acknowledge-mode: manual #ack
+        concurrency: 3 #threads
+
+mybatis-plus:
+  mapper-locations:
+    - classpath:mapper/*.xml
+  type-enums-package: com.mrl.pastry.upload.model.enums
+  configuration:
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+
+pay:
+  key:
+  mch_id:
+  notify_url:

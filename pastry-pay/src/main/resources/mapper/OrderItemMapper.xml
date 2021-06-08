@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mrl.pastry.pay.mapper.OrderItemMapper">
+
+    <select id="getOrderItemVO" resultType="com.mrl.pastry.pay.model.vo.OrderItemVO">
+        select product_id,title,subtitle,thumbnail,price,gift_coin,count,total_price from order_item
+        where order_sn = #{orderSn}
+    </select>
+</mapper>

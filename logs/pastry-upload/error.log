@@ -1,0 +1,2 @@
+2021-06-08 00:14:11.047 [XNIO-1 task-1] ERROR com.mrl.pastry.common.config.SecurityConfiguration - caught AuthenticationException: [Full authentication is required to access this resource]
+2021-06-08 07:25:14.656 [XNIO-1 task-1] ERROR com.mrl.pastry.common.config.SecurityConfiguration - caught AuthenticationException: [Full authentication is required to access this resource]

@@ -1,0 +1,6 @@
+2021-06-08 21:55:07.351 [main] INFO  com.mrl.pastry.chat.ChatApplication - Starting ChatApplication on NcuL with PID 19352 (E:\IDE\pastry\pastry-chat\target\classes started by Administrator in E:\IDE\pastry)
+2021-06-08 21:55:07.360 [main] INFO  com.mrl.pastry.chat.ChatApplication - The following profiles are active: dev
+2021-06-08 21:55:15.453 [main] INFO  com.mrl.pastry.chat.core.WebSocketServer - netty server[port:9211] is running...
+2021-06-08 21:57:12.269 [main] INFO  com.mrl.pastry.chat.ChatApplication - Starting ChatApplication on NcuL with PID 29064 (E:\IDE\pastry\pastry-chat\target\classes started by Administrator in E:\IDE\pastry)
+2021-06-08 21:57:12.280 [main] INFO  com.mrl.pastry.chat.ChatApplication - The following profiles are active: prod
+2021-06-08 21:57:17.866 [main] INFO  com.mrl.pastry.chat.core.WebSocketServer - netty server[port:9211] is running...
