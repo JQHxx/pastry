@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mrl.pastry.portal.mapper.BlogMapper">
+
+    <select id="getBlogBaseDTO" resultType="com.mrl.pastry.portal.model.dto.BlogBaseDTO">
+        select id,content,attachments,create_time from blog where id = #{blogId}
+    </select>
+
+    <update id="updateBlogStatistic">
+        update blog
+        <set>
+            <if test="#{like != null}">
+                like_count = #{like},
+            </if>
+            <if test="#{visit != null}">
+                visit_count = #{visit},
+            </if>
+        </set>
+        where id = #{blogId}
+    </update>
+</mapper>

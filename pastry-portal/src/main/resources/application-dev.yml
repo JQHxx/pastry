@@ -1,0 +1,63 @@
+server:
+  port: 8088
+
+springfox:
+  documentation:
+    enabled: true
+
+security:
+  ignore:
+    post-urls:
+      - /user/authenticate
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username:
+    password:
+    url: jdbc:mysql://mysql:3306/pastry?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+  redis:
+    host: redis
+    database: 0
+    port: 6379
+    timeout: 10000
+    lettuce:
+      pool:
+        max-active: 1024
+        max-wait: 10000
+        max-idle: 200
+        min-idle: 8
+    redisson:
+      file: classpath:redisson.yml
+  rabbitmq:
+    host: rabbit
+    port: 5672
+    virtual-host: /pastry
+    username:
+    password:
+    publisher-confirm-type: correlated #confirm
+    publisher-returns: true
+    listener:
+      simple:
+        retry:
+          enabled: true
+        acknowledge-mode: manual #ack
+        concurrency: 1 #threads
+#  elasticsearch:
+#    rest:
+#      uris:
+#        - es:9200
+
+mybatis-plus:
+  mapper-locations:
+    - classpath:mapper/*.xml
+  type-enums-package: com.mrl.pastry.portal.model.enums
+  configuration:
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+  global-config:
+    logic-delete-value: 1
+    logic-not-delete-value: 0
+
+wechat:
+  app-id:
+  app-secret:

@@ -1,68 +1,64 @@
 package com.mrl.pastry.portal.model.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
+import com.mrl.pastry.portal.model.enums.BlogStatus;
+import com.mrl.pastry.portal.model.enums.BlogType;
+import com.mrl.pastry.portal.model.enums.EditorType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <p>
- *
- * </p>
+ * Blog entity
  *
  * @author MrL
  * @since 2021-03-07
  */
 @Data
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @ApiModel(value = "Blog对象", description = "")
 public class Blog implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
+    private Long id;
 
-    @ApiModelProperty(value = "category id")
-    private Integer categoryId;
+    @ApiModelProperty(value = "user id")
+    private Long author;
 
     @ApiModelProperty(value = "blog type: default, notice, article...")
-    private Integer type;
+    private BlogType type;
 
     @ApiModelProperty(value = "status: published, recycle...")
-    private Integer status;
+    private BlogStatus status;
 
-    @ApiModelProperty(value = "blog url")
-    private String url;
+    @ApiModelProperty(value = "blog forward url")
+    private String forward;
 
     @ApiModelProperty(value = "blog title")
     private String title;
 
-    @ApiModelProperty(value = "unformatted content")
-    private String originalContent;
-
-    @ApiModelProperty(value = "rendered content")
-    private String formatContent;
+    @ApiModelProperty(value = "content")
+    private String content;
 
     @ApiModelProperty(value = "summary")
     private String summary;
 
-    @ApiModelProperty(value = "cover picture")
-    private String coverPic;
+    @ApiModelProperty(value = "attachment json str")
+    private String attachments;
 
-    @ApiModelProperty(value = "editor: markdown, richtext...")
-    private Integer editorType;
+    @ApiModelProperty(value = "editor: markdown, rich text...")
+    private EditorType editorType;
 
-    @ApiModelProperty(value = "keywords")
-    private String keyword;
-
-    @ApiModelProperty(value = "whether allow comment")
-    private Boolean allowreply;
+    @ApiModelProperty(value = "true: allow comment")
+    private Boolean allowComment;
 
     @ApiModelProperty(value = "top priority")
     private Integer priority;
@@ -76,14 +72,26 @@ public class Blog implements Serializable {
     @ApiModelProperty(value = "likes count")
     private Integer likeCount;
 
-    @ApiModelProperty(value = "coin count")
+    @ApiModelProperty(value = "coins count")
     private Integer coinCount;
 
+    @ApiModelProperty(value = "comments count")
+    private Integer commentCount;
+
+    @TableField(fill = FieldFill.INSERT)
     @ApiModelProperty(value = "create time")
     private Date createTime;
 
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     @ApiModelProperty(value = "update time")
     private Date updateTime;
 
+    @TableLogic
+    @ApiModelProperty(value = "deleted flag")
+    private Boolean deleted;
 
+    public Blog(Long id, Long author) {
+        this.id = id;
+        this.author = author;
+    }
 }

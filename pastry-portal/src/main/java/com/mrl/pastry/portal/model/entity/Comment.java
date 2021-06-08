@@ -1,7 +1,8 @@
 package com.mrl.pastry.portal.model.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
+import com.mrl.pastry.portal.model.enums.CommentStatus;
+import com.mrl.pastry.portal.model.enums.CommentType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -11,9 +12,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <p>
- *
- * </p>
+ * Comment entity
  *
  * @author MrL
  * @since 2021-03-07
@@ -25,41 +24,45 @@ public class Comment implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Long id;
 
-    @ApiModelProperty(value = "blog id")
-    private Integer blogId;
+    @ApiModelProperty(value = "parent comment / blog id")
+    private Long parentId;
 
-    @ApiModelProperty(value = "user who comments")
-    private Integer userId;
+    @ApiModelProperty(value = "receiver id")
+    private Long receiverId;
 
-    @ApiModelProperty(value = "parent comment id")
-    private Integer parentId;
+    @ApiModelProperty(value = "replier id")
+    private Long replierId;
 
     @ApiModelProperty(value = "comment content")
     private String content;
 
-    @ApiModelProperty(value = "comment type: admin's, notice, ")
-    private Integer type;
+    @ApiModelProperty(value = "like count")
+    private Integer likeCount;
 
-    @ApiModelProperty(value = "comment status: published, auditing, recycle")
-    private String status;
-
-    @ApiModelProperty(value = "ip address")
-    private String ipAddress;
-
-    @ApiModelProperty(value = "user agent")
-    private String userAgent;
+    @ApiModelProperty(value = "like count")
+    private Integer commentCount;
 
     @ApiModelProperty(value = "top priority")
     private Integer priority;
 
+    @ApiModelProperty(value = "comment type: user, admin...")
+    private CommentType type;
+
+    @ApiModelProperty(value = "comment status: published, auditing, recycle")
+    private CommentStatus status;
+
+    @TableField(fill = FieldFill.INSERT)
     @ApiModelProperty(value = "create time")
     private Date createTime;
 
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     @ApiModelProperty(value = "update time")
     private Date updateTime;
 
-
+    @TableLogic
+    @ApiModelProperty(value = "deleted flag")
+    private Boolean deleted;
 }
