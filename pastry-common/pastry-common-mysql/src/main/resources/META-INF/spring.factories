@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.mrl.pastry.common.config.MybatisPlusConfiguration,\
+com.mrl.pastry.common.handler.AutoFillHandler
