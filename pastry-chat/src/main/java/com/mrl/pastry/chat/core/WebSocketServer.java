@@ -1,6 +1,5 @@
 package com.mrl.pastry.chat.core;
 
-import com.sun.istack.internal.NotNull;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -79,7 +78,7 @@ public class WebSocketServer implements ApplicationListener<ContextRefreshedEven
     }
 
     @Override
-    public void onApplicationEvent(@NotNull ContextRefreshedEvent event) {
+    public void onApplicationEvent(ContextRefreshedEvent event) {
         if (event.getApplicationContext().getParent() == null) {
             log.info("netty server[port:{}] is running...", port);
             this.run(port);

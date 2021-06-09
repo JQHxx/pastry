@@ -1,6 +1,5 @@
 package com.mrl.pastry.common.api;
 
-import com.sun.istack.internal.Nullable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -26,11 +25,11 @@ public class ResponseEntity<T> {
     public ResponseEntity() {
     }
 
-    public static <T> ResponseEntity<T> set(@Nullable T data, String message, Integer code) {
+    public static <T> ResponseEntity<T> set(T data, String message, Integer code) {
         return new ResponseEntity<>(code, message, data);
     }
 
-    public static <T> ResponseEntity<T> set(@Nullable T data, PastryStatus code) {
+    public static <T> ResponseEntity<T> set(T data, PastryStatus code) {
         return set(data, code.getMsg(), code.getCode());
     }
 
@@ -38,15 +37,15 @@ public class ResponseEntity<T> {
         return set(null, status);
     }
 
-    public static <T> ResponseEntity<T> ok(@Nullable T data) {
+    public static <T> ResponseEntity<T> ok(T data) {
         return set(data, SUCCESS);
     }
 
-    public static <T> ResponseEntity<T> ok(@Nullable T data, @Nullable String message) {
+    public static <T> ResponseEntity<T> ok(T data, String message) {
         return set(data, message, SUCCESS.getCode());
     }
 
-    public static <T> ResponseEntity<T> ok(@Nullable String message) {
+    public static <T> ResponseEntity<T> ok(String message) {
         return ok(null, message);
     }
 }
